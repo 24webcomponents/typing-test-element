@@ -5,11 +5,14 @@
     <title>custom-element demo</title>
   </head>
   <body>
-    <custom-element></custom-element>
+    <typing-test id="a">the quick brown fox jumped over the lazy dog</typing-test>
+
+
+    <button onclick="a.started ? a.stop() : a.start()">Start</button>
 
     <script type="module">
       // import 'https://unpkg.com/@github/custom-element-boilerplate@latest/dist/custom-element.js'
-      import '../src/custom-element.ts'
+      import '../src/typing-test-element.ts'
     </script>
   </body>
 </html>
