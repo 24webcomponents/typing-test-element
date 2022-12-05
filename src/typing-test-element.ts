@@ -62,7 +62,7 @@ class TypingTestElement extends HTMLElement {
     this.#feedback.append(del)
   }
 
-  handleEvent(event) {
+  handleEvent(event: KeyboardEvent) {
     if (!this.#started) return
     const character = this.textContent?.[this.#position]
     if (event.key === character) {
