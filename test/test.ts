@@ -18,10 +18,5 @@ describe('typing-test', function () {
     beforeEach(async function () {
       await fixture(html` <typing-test></typing-test>`)
     })
-
-    it('initiates', function () {
-      const ce = document.querySelector('typing-test')
-      assert.equal(ce?.textContent, ':wave:')
-    })
   })
 })
