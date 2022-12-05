@@ -4,16 +4,89 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "src/custom-element.ts",
+      "path": "src/typing-test-element.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "An example Custom Element. This documentation ends up in the\nREADME so describe how this elements works here.\n\nYou can event add examples on the element is used with Markdown.\n\n```\n<custom-element></custom-element>\n```",
-          "name": "CustomElementElement",
+          "description": "An example Custom Element. This documentation ends up in the\nREADME so describe how this elements works here.\n\nYou can event add examples on the element is used with Markdown.\n\n```\n<typing-test></typing-test>\n```",
+          "name": "TypingTestElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "#renderRoot",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#started",
+              "privacy": "private",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "#position",
+              "privacy": "private",
+              "type": {
+                "text": "number"
+              },
+              "default": "0"
+            },
+            {
+              "kind": "field",
+              "name": "#feedback",
+              "privacy": "private",
+              "type": {
+                "text": "HTMLElement"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "started"
+            },
+            {
+              "kind": "method",
+              "name": "start"
+            },
+            {
+              "kind": "method",
+              "name": "stop"
+            },
+            {
+              "kind": "method",
+              "name": "#continue"
+            },
+            {
+              "kind": "method",
+              "name": "#error",
+              "parameters": [
+                {
+                  "name": "character",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleEvent",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "KeyboardEvent"
+                  }
+                }
+              ]
+            }
+          ],
           "superclass": {
             "name": "HTMLElement"
           },
-          "tagName": "custom-element",
+          "tagName": "typing-test",
           "customElement": true
         }
       ],
@@ -22,16 +95,16 @@
           "kind": "js",
           "name": "default",
           "declaration": {
-            "name": "CustomElementElement",
-            "module": "src/custom-element.ts"
+            "name": "TypingTestElement",
+            "module": "src/typing-test-element.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "custom-element",
+          "name": "typing-test",
           "declaration": {
-            "name": "CustomElementElement",
-            "module": "src/custom-element.ts"
+            "name": "TypingTestElement",
+            "module": "src/typing-test-element.ts"
           }
         }
       ]

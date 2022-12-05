@@ -30,7 +30,7 @@ README so describe how this elements works here.
 You can event add examples on the element is used with Markdown.
 
 ```
-<custom-element></custom-element>
+<typing-test></typing-test>
 ```
 
 ## Browser support
