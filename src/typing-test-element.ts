@@ -48,7 +48,7 @@ class TypingTestElement extends HTMLElement {
   }
 
   #continue() {
-    this.#feedback.querySelectorAll('del').forEach(e => e.remove())
+    for (const el of this.#feedback.querySelectorAll('del')) el.remove()
     const span = this.ownerDocument.createElement('span')
     span.textContent = this.textContent?.[this.#position] || ''
     this.#feedback.append(span)
@@ -56,7 +56,7 @@ class TypingTestElement extends HTMLElement {
   }
 
   #error(character: string) {
-    this.#feedback.querySelectorAll('del').forEach(e => e.remove())
+    for (const el of this.#feedback.querySelectorAll('del')) el.remove()
     const del = this.ownerDocument.createElement('del')
     del.textContent = character
     this.#feedback.append(del)
@@ -65,7 +65,6 @@ class TypingTestElement extends HTMLElement {
   handleEvent(event) {
     if (!this.#started) return
     const character = this.textContent?.[this.#position]
-    console.log(event.key, character)
     if (event.key === character) {
       this.#continue()
     } else {
