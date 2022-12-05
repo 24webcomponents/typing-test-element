@@ -1,13 +1,13 @@
 {
-  "name": "@github/custom-element-element",
+  "name": "typing-test-element",
   "version": "0.0.1",
-  "description": "Boilerplate for creating a custom element.",
-  "main": "dist/custom-element.js",
-  "module": "dist/custom-element.js",
+  "description": "Test your typing skills",
+  "main": "dist/typing-test-element.js",
+  "module": "dist/typing-test-element.js",
   "type": "module",
-  "types": "dist/custom-elements.d.ts",
+  "types": "dist/typing-test-element.d.ts",
   "license": "MIT",
-  "repository": "github/custom-element-boilerplate",
+  "repository": "24webcomponents/typing-test-element",
   "files": [
     "dist"
   ],

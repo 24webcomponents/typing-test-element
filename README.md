@@ -1,11 +1,11 @@
-# &lt;custom-element&gt; element
+# &lt;typing-test&gt; element
 
-Boilerplate for creating a custom element.
+Test your typing skills
 
 ## Installation
-Available on [npm](https://www.npmjs.com/) as [**@github/custom-element-element**](https://www.npmjs.com/package/@github/custom-element-element).
+Available on [npm](https://www.npmjs.com/) as [**typing-test-element**](https://www.npmjs.com/package/typing-test-element).
 ```
-$ npm install --save @github/custom-element-element
+$ npm install --save typing-test-element
 ```
 
 ## Usage
@@ -15,13 +15,13 @@ $ npm install --save @github/custom-element-element
 Import as ES modules:
 
 ```js
-import '@github/custom-element-element'
+import 'typing-test-element'
 ```
 
 Include with a script tag:
 
 ```html
-<script type="module" src="./node_modules/@github/custom-element-element/dist/index.js">
+<script type="module" src="./node_modules/typing-test-element/dist/index.js">
 ```
 
 An example Custom Element. This documentation ends up in the
